@@ -2,8 +2,14 @@ import java.util.Iterator;
 
 public class CommandLineView {
     private RentABike rentaBike;
-    public CommandLineView(){
-        rentaBike = new RentABike("Rowery Brucea");
+    public CommandLineView(){}
+
+    public void setRentaBike(RentABike rentaBike){
+        this.rentaBike = rentaBike;
+    }
+
+    public RentABike getRentaBike(){
+        return this.rentaBike;
     }
 
     public void printAllBikes(){
